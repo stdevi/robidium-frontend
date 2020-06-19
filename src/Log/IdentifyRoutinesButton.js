@@ -23,7 +23,7 @@ class IdentifyRoutinesButton extends React.Component {
       },
     }
 
-    axios.post('http://localhost:80/routines', data, config)
+    axios.post('http://robidium2.cloud.ut.ee:80/routines', data, config)
     .then(response => {
       this.props.onRoutinesReceived(response.data)
       this.props.onClick(false)

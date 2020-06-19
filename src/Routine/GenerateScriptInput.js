@@ -9,7 +9,7 @@ class GenerateScriptInput extends React.Component {
   handleClick = () => {
     this.props.onClick({scriptLoad: true})
 
-    axios.post('http://localhost:80/scripts', null, {params: {
+    axios.post('http://robidium2.cloud.ut.ee:80/scripts', null, {params: {
       patternId: this.props.selectedRoutineId
     }})
     .then(response => {

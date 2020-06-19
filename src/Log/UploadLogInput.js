@@ -19,7 +19,7 @@ class UploadLogInput extends React.Component {
     const formData = new FormData();
     formData.append("file", file, file.name);
 
-    axios.post('http://localhost:80/logs', formData, config)
+    axios.post('http://robidium2.cloud.ut.ee:80/logs', formData, config)
     .then(response => {
       this.props.onLoading({successfullUploaded: true, loading: false})
       this.props.onResponse({contextAttributes: response.data, file: file})
