@@ -47,7 +47,7 @@ class UploadLogInput extends React.Component {
               <Box display="flex" mr={1}>
                 <BackupIcon color="primary" />
               </Box>
-              Upload Log
+              Upload
             </Box>
           </Fab>
         </label>
