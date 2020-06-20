@@ -118,7 +118,6 @@ import { TextField, Checkbox, FormControlLabel, Grid, Select, MenuItem,
               <FormControlLabel
                 control={
                   <Checkbox
-                    defaultChecked
                     onChange={(event) => this.props.setSegmented(event.target.checked)}
                     name="segmented"
                     color="primary"
