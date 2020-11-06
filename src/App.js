@@ -5,6 +5,7 @@ import 'fontsource-roboto'
 
 import Main from './Main'
 import HomeText from './Home/HomeText'
+import Box from "@material-ui/core/Box";
 
 const App = () => {
   const [showIntro, setShowIntro] = useState(false);
@@ -14,11 +15,11 @@ const App = () => {
     <div>
       <CssBaseline />
       <AppBar color="primary" position="relative">
-        <Toolbar>
-          <Avatar alt="Logo" src="/logo.png"/>
-          <Typography variant="h6">
-            Robidium
-          </Typography>
+        <Toolbar style={{ height: '130px', background: "#b8baba"}}>
+            <Avatar alt="Logo"  variant={"square"} src="/logo.png" style={{ height: '100px', width: '80px' }}/>
+            <Box ml={1} fontWeight="fontWeightBold" fontSize="h4.fontSize">
+                Robidium
+            </Box>
         </Toolbar>
       </AppBar>
       <Zoom
